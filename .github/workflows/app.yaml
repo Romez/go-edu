@@ -2,6 +2,7 @@ name: App
 on: [push]
 jobs:
   test:
+    runs-on: [ubuntu-latest, macos-latest]
     steps:
       - name: Install go
         uses: actions/setup-go@v2
